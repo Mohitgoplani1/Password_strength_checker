@@ -1,0 +1,90 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* Apply global styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Courier Prime', monospace; /* Set a global font */
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+/* Style the main container */
+.container {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background: black; /* Black background for contrast */
+    color: #FFF; /* White text color for visibility */
+}
+
+/* Style the heading */
+h1 {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Style the input box container */
+.input-box {
+    width: 400px; /* Fixed width for larger screens */
+    max-width: 90%; /* Responsive width for smaller screens */
+    position: relative; /* Allows positioning child elements */
+}
+
+/* Style the password input field */
+.input-box input {
+    width: 100%; /* Full width of the container */
+    height: 60px; /* Fixed height */
+    padding: 0 80px 0 20px; /* Padding for text and space for the toggle icon */
+    border: 1px solid #ccc; /* Light gray border */
+    outline: none; /* Remove default outline */
+    color: #FFF; /* White text color */
+    background: transparent; /* Transparent background */
+}
+
+/* Style the eye icon for toggling password visibility */
+.input-box i {
+    position: absolute; /* Position it inside the container */
+    right: 0; /* Align it to the right edge */
+    top: 0; /* Align it to the top edge */
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    text-align: center; /* Center text horizontally */
+    line-height: 60px; /* Center text vertically */
+    font-size: 24px; /* Icon size */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+/* Style the strength meter */
+#strength-meter {
+    width: 0; /* Initial width is zero */
+    height: 10px; /* Fixed height for the bar */
+    margin-top: 10px; /* Space above the meter */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ccc; /* Default light gray color */
+    transition: width 0.5s ease; /* Smooth transition for width changes */
+}
+
+/* Style for the password strength message */
+#message {
+    margin-top: 20px; /* Space above the message */
+    font-size: 18px; /* Slightly larger font for readability */
+}
+
+/* Style the password requirements section */
+#requirements {
+    margin-top: 20px; /* Space above the requirements list */
+}
+
+/* Style individual requirement items */
+#requirements li {
+    list-style-type: none; /* Remove default list styling */
+    margin-bottom: 5px; /* Space below each requirement */
+}
+
+/* Style met requirements */
+#requirements li.met {
+    color: green; /* Change color to green for met requirements */
+}

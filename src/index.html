@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and setup for the web page -->
+    <meta charset="UTF-8"> <!-- Specifies character encoding as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+    <title>Password Strength Checker</title> <!-- Title displayed on the browser tab -->
+
+    <!-- Link to external CSS file for custom styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Font Awesome for icons (e.g., the eye icon for toggling password visibility) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for the password strength checker -->
+    <div class="container">
+        <!-- Title of the application -->
+        <h1>Password Strength Checker</h1>
+
+        <!-- Input section for the password -->
+        <div class="input-box">
+            <!-- Password input field -->
+            <input type="password" placeholder="Enter your password" id="password">
+            <!-- Eye icon for toggling password visibility -->
+            <i class="far fa-eye" id="togglePassword"></i>
+            <!-- Strength meter that visually indicates the password strength -->
+            <div id="strength-meter"></div>
+        </div>
+
+        <!-- Message section to display password strength (e.g., Weak, Strong) -->
+        <div id="message"></div>
+
+        <!-- Suggestions list for password requirements -->
+        <div id="requirements">
+            <p>Password Strength Suggestions:</p>
+            <br>
+            <ul>
+                <!-- Individual requirements for a strong password -->
+                <li id="req-lowercase">At least one lowercase letter</li>
+                <li id="req-uppercase">At least one uppercase letter</li>
+                <li id="req-special">At least one special character</li>
+                <li id="req-length">Minimum 8 characters</li>
+                <li id="req-number">At least one number</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file for dynamic functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
